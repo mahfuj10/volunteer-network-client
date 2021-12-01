@@ -1,0 +1,15 @@
+
+
+.service-item {
+  position: absolute;
+  width: 270px;
+  height: 80px;
+  display: grid;
+  align-items: center;
+  color: white;
+  margin-top: 14.3%;
+  border-radius: 0px 0px 10px 10px;
+}
+.service-item h5 {
+  font-size: 19px !important;
+}

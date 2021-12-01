@@ -1,0 +1,30 @@
+.event-section {
+  background-color: #f4f7fc;
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  /* z-index: -1; */
+}
+.addevent-box {
+  width: 50%;
+  padding: 30px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  margin-left: 8.2%;
+  margin-top: 7%;
+  position: absolute;
+}
+.addevent-box input,
+textarea {
+  padding: 6px;
+  width: 22em;
+  border: 1px solid rgb(185, 182, 182);
+}
+.nav-link {
+  color: #111111 !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #207fee !important;
+  background-color: #ffffff !important;
+}

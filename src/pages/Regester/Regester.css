@@ -1,0 +1,23 @@
+.regester-container {
+  border: 2px solid rgb(207, 203, 203);
+  width: 25%;
+  padding: 25px 50px;
+  display: grid;
+  justify-content: center;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+.regester-container input {
+  width: 20em;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+.regester-container,
+.date,
+input::placeholder,
+input[value^="Water purifing"] {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}

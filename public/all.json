@@ -1,0 +1,128 @@
+[
+    {
+        "name":"Foster a shelter animal",
+         "description":"You must not lose faith in humanity.",
+         "img":"https://i.ibb.co/ZYhqcZm/animal-Shelter.png",
+        "color":"#FFBD3E"
+    },
+    {
+        "name":"Babysit during PTA",
+         "description":"Why is water purifier from RO filtration process has a low pH value.",
+         "img":"https://i.ibb.co/Lr77rnc/babySit.png",
+         "color":"#FF7044"
+
+    },
+    {
+        "name":"Build birdhouse for your neighbors",
+         "description":"This birdhouse is ideal for smaller birds like wrens .",
+         "img":"https://i.ibb.co/NyJv0BK/bird-House.png",
+         "color":"#3F90FC"
+
+    },
+    {
+        "name":"Child Support",
+         "description":" to take care of someone's baby or child while that person.",
+         "img":"https://i.ibb.co/yW9sQPT/child-Support.png",
+         "color":"#421FCF"
+
+    },
+    {
+        "name":"Clean water for children",
+         "description":"An animal shelter or pound is a place where stray.",
+         "img":"https://i.ibb.co/2YJ13Lm/clean-Water.png",
+         "color":"#3F90FC"
+
+    },
+    {
+        "name":"Clean up your local park",
+         "description":"vote-Register You must not lose faith in humanity.",
+         "img":"https://i.ibb.co/4Kk6Z3Q/clearn-Park.png",
+         "color":"#421FCF"
+
+    },
+    {
+        "name":"Host a clothing swap",
+         "description":"A toy animal made of fabric stuffed with a soft filling.",
+         "img":"https://i.ibb.co/grf4Ddj/cloth-Swap.png",
+         "color":"#FFBD3E"
+    },
+    {
+        "name":"Give a seminar on driving safety",
+         "description":"Study Group partners with universities across repare student",
+         "img":"https://i.ibb.co/jrHrXzT/drive-Safety.png",
+         "color":"#FF7044"
+
+    },
+    {
+        "name":"Food Charity",
+         "description":"The Suffield Academy Hoffman College Counseling is here to help.",
+         "img":"https://i.ibb.co/wLyr0yR/food-Charity.png",
+         "color":"#FFBD3E"
+
+    },
+    {
+        "name":"Good Eduucation",
+         "description":"To find a cleanup near you, continue below.",
+         "img":"https://i.ibb.co/PWB2rj5/good-Education.png",
+         "color":"#3F90FC"
+
+    },
+    {
+        "name":"Refuge Shelter",
+         "description":"Many homeless men and women do seek shelter.",
+         "img":"https://i.ibb.co/R0qnzW6/refuse-Shelter.png",
+         "color":"#FF7044"
+
+    },
+    {
+        "name":"Give IT help to local adults",
+         "description":"Music lessons are a type of formal instruction in playing.",
+         "img":"https://i.ibb.co/Mk5pv40/ITHelp.png",
+         "color":"#421FCF"
+
+    },
+    {
+        "name":"Organize books at the libary",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/2kfmZXb/library-Books.png",
+         "color":"#421FCF"
+
+    },
+    {
+        "name":"New books for children",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/6rtjmxf/newBooks.png",
+         "color":"#FFBD3E"
+
+    },
+    {
+        "name":"Host a river clean-up",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/bQ7NfzD/river-Clean.png",
+         "color":"#FF7044"
+    } ,
+    {
+        "name":"Collect school supplies",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/WBRpWwH/school-Suffiles.png",
+         "color":"#FFBD3E"
+    } ,
+    {
+        "name":"Host a study group",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/44RJK7b/study-Group.png",
+         "color":"#3F90FC"
+    }, 
+    {
+        "name":"Collect stuffed animals",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/K0hGs6T/stuffed-Animals.png",
+         "color":"#FF7044"
+    } ,
+    {
+        "name":"Teach people how to register to vote",
+         "description":"From foodie favourites to thriller maestros and from fiction's.",
+         "img":"https://i.ibb.co/5MkWHXQ/vote-Register.png",
+         "color":"#421FCF"
+    } 
+]
