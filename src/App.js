@@ -5,73 +5,72 @@ import Header from './pages/home/Header/Header';
 import Navbar from './pages/home/Header/Navbar';
 import SingleDetials, { singleServiceContext } from './pages/Details/SingleDetials';
 import { useState } from 'react';
-import Regester from './pages/Regester/Regester';
 import Event from './pages/Events/Events';
-import Dashboard from './pages/Dashboard/Dashboard';
 import AuthContext from './Firebase/AuthContext';
 import Login from './pages/Account/Login';
 import MyEvent from './pages/MyEvent/MyEvent';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 
 function App() {
 
-const [ service, setService ]  = useState();
+   const [service, setService] = useState();
 
-  return (
-  
-   <AuthContext>
-   <singleServiceContext.Provider value={[service,setService]}>
-     <BrowserRouter>
-         
-     <Switch>
-       
-       <Route exact path="/">
-         <Header />
-          <Fund />
-       </Route>
+   return (
 
-       <Route exact path="/home">
-         <Header />
-          <Fund />
-       </Route>
+      <AuthContext>
+         <singleServiceContext.Provider value={[service, setService]}>
+            <BrowserRouter>
 
-       <Route path="/donation">
+               <Switch>
 
-       </Route>
+                  <Route exact path="/">
+                     <Header />
+                     <Fund />
+                  </Route>
 
-       <Route path="/events">
-          <Regester />
-       </Route>
+                  <Route exact path="/home">
+                     <Header />
+                     <Fund />
+                  </Route>
 
-       <Route path="/blog">
-          <Login />
-       </Route>
+                  <Route path="/donation">
 
-       <Route path="/event">
-          <Event />
-       </Route>
+                  </Route>
 
-       <Route path="/service/:id">
-          <SingleDetials />
-       </Route>
+                  {/* <Route path="/dashboard"> */}
+                  {/* <Regester /> */}
+                  {/* </Route> */}
 
-       {/* <Route path="/myEvent/:email">
-          <Navbar />
-          <Dashboard />
-       </Route> */}
+                  <Route path="/login">
+                     <Login />
+                  </Route>
 
-       <Route path="/myEvent/:email">
-          <Navbar />
-         <MyEvent />
-       </Route>
+                  <Route path="/dashboard">
+                     <Event />
+                  </Route>
 
-       
+                  <Route path="/service/:id">
+                     <SingleDetials />
+                  </Route>
 
-     </Switch>
-     </BrowserRouter>
-     </singleServiceContext.Provider>
-     </AuthContext>
-  );
+
+                  <Route path="/myEvent/:email">
+                     <Navbar />
+                     <MyEvent />
+                  </Route>
+
+                  <Route path="*">
+                     <PageNotFound />
+                  </Route>
+
+
+
+               </Switch>
+            </BrowserRouter>
+         </singleServiceContext.Provider>
+      </AuthContext>
+   );
 }
 
 export default App;

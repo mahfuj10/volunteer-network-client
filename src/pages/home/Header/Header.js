@@ -7,11 +7,10 @@ const Header = () => {
 
   const headerStyle = {
     backgroundSize: 'cover',
-    // position: 'absolute',
     top: 0,
     width: '100vw',
     backgroundImage: `url(${headerBanner})`,
-    height: '500px',
+    height: '700px',
   }
 
   return (
@@ -19,6 +18,7 @@ const Header = () => {
     <header style={headerStyle} >
       <article className="blend-mode"></article>
       <section >
+
         <Navbar />
 
         <h3 className="text-center mb-4" style={{ marginTop: "120px" }}>I GROW BY HELPING PEOPLE IN NEED</h3>

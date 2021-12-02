@@ -24,7 +24,7 @@ const AddEvent = () => {
 
 
 
-
+    // https://whispering-anchorage-92161.herokuapp.com/service
 
     const handaleSetEvent = () => {
 
@@ -43,32 +43,20 @@ const AddEvent = () => {
         if (!image) {
             return;
         }
-        fetch(`https://whispering-anchorage-92161.herokuapp.com/service`, {
-            method: "POST",
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(event)
+        fetch('https://whispering-anchorage-92161.herokuapp.com/service', {
+            method: 'POST',
+            body: formData
         })
             .then(res => res.json())
-            .then(data => { })
+            .then(data => {
+                if (data.insertedId) {
 
-        // fetch('http://localhost:5000/service', {
-        //     method: 'POST',
-        //     body: formData
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         if (data.insertedId) {
-        //             console.log('doctor added successfully')
-        //         }
-        //     })
-        //     .catch(error => {
-        //         console.error('Error:', error);
-        //     });
-
-
-
+                    console.log(' added successfully')
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
     }
 
 

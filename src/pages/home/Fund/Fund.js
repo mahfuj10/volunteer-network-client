@@ -15,7 +15,7 @@ const Fund = () => {
 
 
     return (
-        <Container >
+        <Container style={{ marginTop: "-90px" }}>
             {
                 services?.length === 0 ? <Spinner style={{ marginLeft: "50%", marginTop: "15%", position: 'absolute' }} animation="border" variant="primary" />
                     :

@@ -1,29 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
 
 const MyEvent = () => {
 
   const [events, setEvents] = useState([]);
-  const { email } = useParams();
 
   useEffect(() => {
     fetch(`https://whispering-anchorage-92161.herokuapp.com/admins`)
       .then(res => res.json())
       .then(data => setEvents(data))
-  }, [])
-  // useEffect(()=>{
-  //     fetch(`http://localhost:5000/admins/${email}`)
-  //       .then(res => res.json())
-  //       .then(data => setEvents(data))
-  // },[])
+  }, [events])
 
+  const handaleDelete = id => {
+    const uri = `https://whispering-anchorage-92161.herokuapp.com/admins/${id}`;
+    fetch(uri, {
+      method: "DELETE"
+    })
+      .then()
+      .then(data => {
+
+        if (data.deleteCount > 0) {
+          const remainingAdmin = events.filter(admin => admin._id !== id);
+          setEvents(remainingAdmin);
+        }
+      })
+  }
 
 
   return (
 
-    <section>
+    <section className="d-flex flex-wrap container gap-3">
       {
-        events.map(event => <div className="card mb-3" style={{ maxWidth: "540px", padding: "13px" }}>
+        events.map(event => <div className="card mb-3" style={{ maxWidth: "500px", padding: "13px" }}>
           <div className="row g-0">
             <div className="col-md-4">
               <img src={event?.image} className="img-fluid rounded-start" alt="eventImage" />
@@ -36,7 +43,7 @@ const MyEvent = () => {
 
                 <h5 style={{ fontWeight: "500", marginTop: "20px" }}>{event?.date}</h5>
 
-                <button className="btn btn-dark px-4 position-absolute" style={{ marginLeft: "40%" }}>Cancel</button>
+                <button className="btn btn-dark px-4 position-absolute" style={{ marginLeft: "40%" }} onClick={() => handaleDelete(event._id)}>Cancel</button>
 
               </div>
             </div>

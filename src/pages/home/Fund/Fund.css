@@ -13,3 +13,10 @@
 .service-item h5 {
   font-size: 19px !important;
 }
+
+@media only screen and (max-width: 600px) {
+
+.service-item{
+margin-top: 80% !important;
+}
+}
